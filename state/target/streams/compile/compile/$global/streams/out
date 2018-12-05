@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/home/franklinchou/Documents/dev/fp-in-scala/state/6-1.scala:55:32: not found: type IncrementRNG[0m
-[0m[[0m[31merror[0m] [0m[0m    rng = rngNext.asInstanceOf[IncrementRNG][0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
