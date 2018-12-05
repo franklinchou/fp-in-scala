@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/state_2.12-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SixOne$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/SixOne$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RNG.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/RNG.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SixOne.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/SixOne.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Max$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/Max$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SixOne$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/SixOne$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Max$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/Max$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IncrementRng$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/IncrementRng$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IncrementRng.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/IncrementRng.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Max.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/franklinchou/Documents/dev/fp-in-scala/state/target/scala-2.12/classes/Max.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
