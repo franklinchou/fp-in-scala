@@ -1,17 +1,4 @@
-// Stateless random integer generator
-trait RNG {
-  def nextInt: (Int, RNG)
-}
-
-// A "random number generator" that increments the seed by 1
-case class IncrementRng(seed: Int) extends RNG {
-  def nextInt: (Int, RNG) = {
-    val newSeed = seed + 1
-    val nextRng = IncrementRng(newSeed)
-    (newSeed, nextRng)
-  }
-}
-
+// Run with: sbt "runMain SixOne"
 object SixOne extends App {
 
   var acc = Seq.empty[Boolean]
