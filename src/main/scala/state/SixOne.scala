@@ -1,3 +1,6 @@
+package state
+
+
 // Run with: sbt "runMain SixOne"
 object SixOne extends App {
 
@@ -32,9 +35,9 @@ object SixOne extends App {
   // Test that given a negative seed = MaxValue, expected # is returned
   val rng5 = IncrementRng(Int.MaxValue)
   val (n5, _) = nonNegativeInt(rng5)
-  acc= acc :+ (n5 == Math.abs(Int.MinValue))
+  acc = acc :+ (n5 == Math.abs(Int.MinValue))
 
-  if(!acc.forall(_ == true)) {
+  if (!acc.forall(_ == true)) {
     sys.exit(1)
   }
 }

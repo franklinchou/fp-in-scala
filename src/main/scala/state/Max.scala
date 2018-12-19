@@ -1,3 +1,5 @@
+package state
+
 // run with `sbt "runMain Max"`
 
 // Incrementing the upper bound of Int simply
