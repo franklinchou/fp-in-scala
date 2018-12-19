@@ -1,3 +1,4 @@
+package state
 
 
 // A "random number generator" that increments the seed by 1
