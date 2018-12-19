@@ -1,5 +1,6 @@
 package state
 
+
 // Run with: sbt "runMain SixOne"
 object SixOne extends App {
 
