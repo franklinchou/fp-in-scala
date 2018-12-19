@@ -5,8 +5,8 @@
 object Max extends App {
 
   // Important to note:
-  println(Int.MaxValue + 1 == Int.MinValue)
+  assert(Int.MaxValue + 1 == Int.MinValue)
 
-  println(Int.MinValue - 1 == Int.MaxValue)
+  assert(Int.MinValue - 1 == Int.MaxValue)
 
 }
