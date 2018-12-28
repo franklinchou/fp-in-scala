@@ -14,4 +14,4 @@ workflows:
   version: 2
   test_all:
     jobs:
-      - run-scala-tests
+      - scala-test
