@@ -3,6 +3,7 @@
 
 target/*
 project/target/*
+src/target/*
 
 *.iml
 .idea/*
