@@ -8,4 +8,10 @@ jobs:
       - run:
           name: run-scala-tests
           command: |
-            cd 
+            sbt clean compile
+            sbt tets
+workflows:
+  version: 2
+  test_all:
+    jobs:
+      - scala_test
