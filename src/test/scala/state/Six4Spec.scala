@@ -18,5 +18,4 @@ class Six4Spec extends FunSpec {
     }
   }
 
-
 }
