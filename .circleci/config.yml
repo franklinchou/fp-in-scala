@@ -9,9 +9,9 @@ jobs:
           name: run-scala-tests
           command: |
             sbt clean compile
-            sbt tets
+            sbt test
 workflows:
   version: 2
   test_all:
     jobs:
-      - scala_test
+      - run-scala-tests
