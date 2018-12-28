@@ -2,7 +2,7 @@ package state
 
 
 // Run with: sbt "runMain SixOne"
-object SixOne extends App {
+object Six1 extends App {
 
   var acc = Seq.empty[Boolean]
 
