@@ -19,14 +19,14 @@ object Six3 {
     ((values._2, values._1), newRng)
   }
 
-  private def doubleWithRange(rng: RNG,
-                              times: Int = 3,
-                              result: List[Double] = List.empty[Double]): (List[Double], RNG) = {
+  private def recursiveDbl(rng: RNG,
+                           times: Int = 3,
+                           result: List[Double] = List.empty[Double]): (List[Double], RNG) = {
     if (times > 0) {
       val (int, rngNext) = rng.nextInt
       val dbl = double(int)
       val l: List[Double] =  dbl :: result
-      doubleWithRange(rngNext, times - 1, l)
+      recursiveDbl(rngNext, times - 1, l)
     } else {
       (result, rng)
     }
@@ -35,7 +35,7 @@ object Six3 {
 
   def double3(rng: RNG): ((Double, Double, Double), RNG) = {
 
-    val acc = doubleWithRange(rng)
+    val acc = recursiveDbl(rng)
 
     // NOTE: Generally this is ill advised because a list's length is
     // unknown, while a tuple's length is set at instantiation.
