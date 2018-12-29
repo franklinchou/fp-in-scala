@@ -16,7 +16,7 @@ of every element `a` in set `A` (the domain of `f`) to a specific element `b`
 in set `B` (the codomain of `f`). The application of that function is commonly
 denoted `f(a)`. The result of applying `f` to every element in `A` is an
 ordered pair `(a, f(a)) for all a in A`. Consider the case for the Empty
-Set. The Empty Function is a function, `f`, which maps every element in the
+Function. The Empty Function is a function, `f`, which maps every element in the
 Empty Set to some codomain, `B`, `f: {} => B`. Since there are no elements
 in the Empty Set, no specific elements in `B` will be identified. Therefore
 the result of `f` is an empty group of ordered pairs. The Empty Function
