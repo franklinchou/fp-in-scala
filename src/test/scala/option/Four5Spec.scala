@@ -5,8 +5,21 @@ import org.scalatest.FunSpec
 import scala.util.Try
 
 
-
 class Four5Spec extends FunSpec {
+
+  // parseInts from p. 59
+  describe("test behaviour of parseInts") {
+    it("given mix of strings and ints") {
+      val strs = List("cat", "dog", "123")
+      assert(Four5.parseInts(strs).contains(List(123)))
+    }
+    it("given only strings") {
+      val strs = List("cat", "dog", "starfish")
+      assert(Four5.parseInts(strs).isEmpty)
+    }
+
+  }
+
 
   describe("traverse") {
     it("should return only ints") {
@@ -37,7 +50,6 @@ class Four5Spec extends FunSpec {
       // convert to int
       val strs = List("123", "45", "abc")
       val r = Four5.traverse2[String, Int](strs)(x => Try(x.toInt).toOption)
-      println(r)
       val test = r.exists(_.foldRight[Boolean](true)((i, acc) => i.isInstanceOf[Int] && acc))
       assert(test)
     }
@@ -50,5 +62,25 @@ class Four5Spec extends FunSpec {
     }
 
   }
+
+
+  describe("traverseFold1") {
+    it("should return only ints") {
+      // convert to int
+      val strs = List("123", "45", "abc")
+      val r = Four5.traverseFold1[String, Int](strs)(x => Try(x.toInt).toOption)
+      val test = r.exists(_.foldRight[Boolean](true)((i, acc) => i.isInstanceOf[Int] && acc))
+      assert(test)
+    }
+
+    it("should return None") {
+      // convert to int
+      val strs = List("ihd", "aa45", "abc")
+      val r = Four5.traverseFold1[String, Int](strs)(x => Try(x.toInt).toOption)
+      assert(r.isEmpty)
+    }
+
+  }
+
 
 }

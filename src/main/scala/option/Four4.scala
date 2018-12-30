@@ -15,7 +15,7 @@ object Four4 {
   }
 
   // for use in sequence with map
-  private def map2[A, B, C](a: Option[A], b: Option[B])(f: (A, B) => C): Option[C] = {
+  def map2[A, B, C](a: Option[A], b: Option[B])(f: (A, B) => C): Option[C] = {
     for {
       as <- a
       bs <- b
