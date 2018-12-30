@@ -63,24 +63,4 @@ class Four5Spec extends FunSpec {
 
   }
 
-
-  describe("traverseFold1") {
-    it("should return only ints") {
-      // convert to int
-      val strs = List("123", "45", "abc")
-      val r = Four5.traverseFold1[String, Int](strs)(x => Try(x.toInt).toOption)
-      val test = r.exists(_.foldRight[Boolean](true)((i, acc) => i.isInstanceOf[Int] && acc))
-      assert(test)
-    }
-
-    it("should return None") {
-      // convert to int
-      val strs = List("ihd", "aa45", "abc")
-      val r = Four5.traverseFold1[String, Int](strs)(x => Try(x.toInt).toOption)
-      assert(r.isEmpty)
-    }
-
-  }
-
-
 }

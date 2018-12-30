@@ -50,18 +50,6 @@ object Four5 {
     }
   }
 
-  // traverse using fold in one line
-  def traverseFold1[A, B](l: List[A])(f: A => Option[B]): Option[List[B]] = {
-    // Recall that in foldRight, the first item to be processed is the
-    // last item in the list. The items are processed from the last item
-    // RIGHT into the accumulator
-    l.foldRight[Option[List[B]]](Some(Nil)) {
-      (i, acc) =>
-        Four4.map2(f(i), acc)(_ :: _)
-    }
-  }
-
-
   /**
     * Sequence [[Four4]] in terms of traverse
     */
