@@ -2,7 +2,6 @@ package option
 
 object Four3 {
 
-
   // Generic function that combines two Option values using
   // a binary function. If either option is None, then the return
   // value is None.
