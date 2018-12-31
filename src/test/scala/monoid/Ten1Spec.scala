@@ -17,7 +17,7 @@ class Ten1Spec extends FunSpec {
       assert(false == false && Ten1.booleanAnd.identity)
 
       // This won't work because the `&&` comparison evaluates to
-      // false and short-circuitsthe `==` comparison.
+      // false and short-circuits the `==` comparison.
       // assert(false && Ten1.booleanAnd.identity == false)
     }
   }
