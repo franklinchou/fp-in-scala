@@ -30,3 +30,22 @@ A monoid is simply a semigroup with the identity function. For example:
 all positive integers including 0 is a monoid. (Zero provides the identity.)
 2. The set of all natural numbers and multiplication is a semigroup. (One
 provides the identity.)
+
+## Monoids are one object categories
+
+A category is simply a directed graph. Nodes are called objects and directed
+edges are called arrows (or morphisms). A category consists of objects 
+(`A`, `B`, `C`, etc.) and arrows between objects, (`A => B`, `A => C`, `B => C`, etc). 
+Given any pair of arrows `f: B => C` and `g: A => B`, there exists a composite arrow
+`(f * g): A => C`.
+
+A category has two basic properties: (1) arrow composition is associative,
+in other words, `f(a, g(b,c)) == f(g(a, b), c)`; and (2) there is an identity 
+arrow for each object, in other words, `f(a, identity) == f(identity, a) `. Note that  
+these are the **same properties** that hold true for Monoids.
+
+See [here](https://apocalisp.wordpress.com/2010/06/14/on-monoids/).
+
+## Free Monoids
+
+What makes a monoid "free"?
