@@ -33,8 +33,8 @@ provides the identity.)
 
 ## Monoids are one object categories
 
-A category is simply a directed graph. Nodes are called objects and directed
-edges are called arrows (or morphisms). A category consists of objects 
+A category can be thought of as simply a directed graph. Nodes are called objects 
+and directed edges are called arrows (or morphisms). A category consists of objects 
 (`A`, `B`, `C`, etc.) and arrows between objects, (`A => B`, `A => C`, `B => C`, etc). 
 Given any pair of arrows `f: B => C` and `g: A => B`, there exists a composite arrow
 `(f * g): A => C`.
@@ -49,3 +49,5 @@ See [here](https://apocalisp.wordpress.com/2010/06/14/on-monoids/).
 ## Free Monoids
 
 What makes a monoid "free"?
+
+
