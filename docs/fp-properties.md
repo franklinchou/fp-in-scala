@@ -28,7 +28,13 @@ Advantages in testing pure functions.
 
 ## Immutability 
 
-Failure atomicity. If a method throws an exception, the object should still be usable afterwards.
+1. Failure atomicity. If a method throws an exception, the object should still be usable afterwards.
 Program execution is not halted because of the state of the inputs. 
+2. Thread-safety and concurrency. Most failures in OOP languages when it comes to concurrency
+have to do with passing around shared mutable state.
 
 # What are functions good for?
+
+1. Mapping (the classic example)
+
+2. Control flow
