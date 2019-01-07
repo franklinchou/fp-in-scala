@@ -15,7 +15,7 @@ has this general type signature:
 `map(c: Seq[A], f: A => B): Seq[B]`
 
 In order for a language to support this type signature it must support the passing of a function, `f`,
-as an argument. 
+as a value. See also higher order functions.
 
 ## Idempotence (pure functions)
 
