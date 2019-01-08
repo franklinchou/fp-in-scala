@@ -37,4 +37,4 @@ have to do with passing around shared mutable state.
 
 1. Mapping (the classic example)
 
-2. Control flow
+2. Control flow (the not so obvious example)
